@@ -32,10 +32,11 @@
             this.JuliaSetPanel = new System.Windows.Forms.Panel();
             this.MouseLabelX = new System.Windows.Forms.Label();
             this.MouseLabelY = new System.Windows.Forms.Label();
-            this.TestLbl = new System.Windows.Forms.Label();
             this.MandelbrotBtn = new System.Windows.Forms.Button();
             this.JuliaSetBtn = new System.Windows.Forms.Button();
-            this.Test2Lbl = new System.Windows.Forms.Label();
+            this.JuliaLbl = new System.Windows.Forms.Label();
+            this.JuliaLbl2 = new System.Windows.Forms.Label();
+            this.CreditsLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // MandelbrotPanel
@@ -58,7 +59,7 @@
             // MouseLabelX
             // 
             this.MouseLabelX.AutoSize = true;
-            this.MouseLabelX.Location = new System.Drawing.Point(678, 525);
+            this.MouseLabelX.Location = new System.Drawing.Point(672, 525);
             this.MouseLabelX.Name = "MouseLabelX";
             this.MouseLabelX.Size = new System.Drawing.Size(102, 15);
             this.MouseLabelX.TabIndex = 2;
@@ -67,23 +68,15 @@
             // MouseLabelY
             // 
             this.MouseLabelY.AutoSize = true;
-            this.MouseLabelY.Location = new System.Drawing.Point(874, 525);
+            this.MouseLabelY.Location = new System.Drawing.Point(828, 525);
             this.MouseLabelY.Name = "MouseLabelY";
             this.MouseLabelY.Size = new System.Drawing.Size(102, 15);
             this.MouseLabelY.TabIndex = 3;
             this.MouseLabelY.Text = "Mouse Y Position:";
             // 
-            // TestLbl
-            // 
-            this.TestLbl.AutoSize = true;
-            this.TestLbl.Location = new System.Drawing.Point(213, 537);
-            this.TestLbl.Name = "TestLbl";
-            this.TestLbl.Size = new System.Drawing.Size(0, 15);
-            this.TestLbl.TabIndex = 4;
-            // 
             // MandelbrotBtn
             // 
-            this.MandelbrotBtn.Location = new System.Drawing.Point(538, 119);
+            this.MandelbrotBtn.Location = new System.Drawing.Point(538, 145);
             this.MandelbrotBtn.Name = "MandelbrotBtn";
             this.MandelbrotBtn.Size = new System.Drawing.Size(102, 47);
             this.MandelbrotBtn.TabIndex = 5;
@@ -93,7 +86,7 @@
             // 
             // JuliaSetBtn
             // 
-            this.JuliaSetBtn.Location = new System.Drawing.Point(548, 263);
+            this.JuliaSetBtn.Location = new System.Drawing.Point(550, 263);
             this.JuliaSetBtn.Name = "JuliaSetBtn";
             this.JuliaSetBtn.Size = new System.Drawing.Size(81, 43);
             this.JuliaSetBtn.TabIndex = 6;
@@ -101,13 +94,28 @@
             this.JuliaSetBtn.UseVisualStyleBackColor = true;
             this.JuliaSetBtn.Click += new System.EventHandler(this.JuliaSetBtn_Click);
             // 
-            // Test2Lbl
+            // JuliaLbl
             // 
-            this.Test2Lbl.AutoSize = true;
-            this.Test2Lbl.Location = new System.Drawing.Point(286, 537);
-            this.Test2Lbl.Name = "Test2Lbl";
-            this.Test2Lbl.Size = new System.Drawing.Size(0, 15);
-            this.Test2Lbl.TabIndex = 7;
+            this.JuliaLbl.Location = new System.Drawing.Point(538, 195);
+            this.JuliaLbl.Name = "JuliaLbl";
+            this.JuliaLbl.Size = new System.Drawing.Size(113, 65);
+            this.JuliaLbl.TabIndex = 7;
+            // 
+            // JuliaLbl2
+            // 
+            this.JuliaLbl2.Location = new System.Drawing.Point(538, 309);
+            this.JuliaLbl2.Name = "JuliaLbl2";
+            this.JuliaLbl2.Size = new System.Drawing.Size(113, 65);
+            this.JuliaLbl2.TabIndex = 8;
+            // 
+            // CreditsLbl
+            // 
+            this.CreditsLbl.AutoSize = true;
+            this.CreditsLbl.Location = new System.Drawing.Point(12, 537);
+            this.CreditsLbl.Name = "CreditsLbl";
+            this.CreditsLbl.Size = new System.Drawing.Size(136, 15);
+            this.CreditsLbl.TabIndex = 9;
+            this.CreditsLbl.Text = "Made by Gabriel Iobagiu";
             // 
             // MandelbrotSet
             // 
@@ -115,10 +123,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(1184, 561);
-            this.Controls.Add(this.Test2Lbl);
+            this.Controls.Add(this.CreditsLbl);
+            this.Controls.Add(this.JuliaLbl2);
+            this.Controls.Add(this.JuliaLbl);
             this.Controls.Add(this.JuliaSetBtn);
             this.Controls.Add(this.MandelbrotBtn);
-            this.Controls.Add(this.TestLbl);
             this.Controls.Add(this.MouseLabelY);
             this.Controls.Add(this.MouseLabelX);
             this.Controls.Add(this.JuliaSetPanel);
@@ -136,9 +145,10 @@
         private Panel JuliaSetPanel;
         private Label MouseLabelX;
         private Label MouseLabelY;
-        private Label TestLbl;
         private Button MandelbrotBtn;
         private Button JuliaSetBtn;
-        private Label Test2Lbl;
+        private Label JuliaLbl;
+        private Label JuliaLbl2;
+        private Label CreditsLbl;
     }
 }
